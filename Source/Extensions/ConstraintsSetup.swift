@@ -39,6 +39,10 @@ extension BottomContainerView {
     addConstraint(NSLayoutConstraint(item: doneButton, attribute: .centerY,
       relatedBy: .equal, toItem: self, attribute: .centerY,
       multiplier: 1, constant: 0))
+    
+    addConstraint(NSLayoutConstraint(item: doneButton, attribute: .height,
+                                     relatedBy: .equal, toItem: nil, attribute: .notAnAttribute,
+                                     multiplier: 1, constant: 50))
 
     addConstraint(NSLayoutConstraint(item: stackView, attribute: .centerY,
       relatedBy: .equal, toItem: self, attribute: .centerY,
